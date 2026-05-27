@@ -1,0 +1,81 @@
+/* ===================== PROJECT CARDS ===================== */
+.portfolio-content {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  position: relative;
+}
+.portfolio-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+}
+
+.portfolio-thumb {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-thumb-placeholder {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-info {
+  padding: 16px 18px 18px;
+}
+.portfolio-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #222;
+}
+.portfolio-info p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  gap: 8px;
+}
+.portfolio-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.btn-repo {
+  background: #1a1a2e;
+  color: #fff !important;
+  border: 2px solid #1a1a2e;
+}
+.btn-repo:hover {
+  background: #0f0f1a;
+  border-color: #0f0f1a;
+  color: #fff !important;
+}
+.btn-live {
+  background: transparent;
+  color: #1a1a2e !important;
+  border: 2px solid #1a1a2e;
+}
+.btn-live:hover {
+  background: #1a1a2e;
+  color: #fff !important;
+}
