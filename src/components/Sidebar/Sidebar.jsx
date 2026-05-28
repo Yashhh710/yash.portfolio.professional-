@@ -32,7 +32,7 @@ const Sidebar = () => {
 
       <nav id="navmenu" className="navmenu">
         <ul>
-          <li><a href="#hero" className="active" onClick={closeSidebar}><i className="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#hero" onClick={closeSidebar}><i className="bi bi-house navicon"></i>Home</a></li>
           <li><a href="#about" onClick={closeSidebar}><i className="bi bi-person navicon"></i> About</a></li>
           <li><a href="#resume" onClick={closeSidebar}><i className="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="#portfolio" onClick={closeSidebar}><i className="bi bi-images navicon"></i> Project</a></li>
