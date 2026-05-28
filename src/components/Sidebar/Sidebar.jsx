@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Sidebar.css';
 
 const Sidebar = () => {
+  useEffect(() => {
+    const navmenulinks = document.querySelectorAll('.navmenu a');
+
+    function navmenuScrollspy() {
+      navmenulinks.forEach(navmenulink => {
+        if (!navmenulink.hash) return;
+        const section = document.querySelector(navmenulink.hash);
+        if (!section) return;
+        const position = window.scrollY + 200;
+        if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
+          document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
+          navmenulink.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('load', navmenuScrollspy);
+    document.addEventListener('scroll', navmenuScrollspy);
+    navmenuScrollspy(); // run once on mount
+
+    return () => {
+      window.removeEventListener('load', navmenuScrollspy);
+      document.removeEventListener('scroll', navmenuScrollspy);
+    };
+  }, []);
+
   const closeSidebar = () => {
     const header = document.getElementById('header');
     const toggleBtn = document.querySelector('.header-toggle');
