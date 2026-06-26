@@ -66,7 +66,30 @@ const Projects = () => {
           </ul>
 
           <div className="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+            {/* projects */}
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolios">
+              <div className="portfolio-content h-100">
+                <img
+                  src="assets/project-img/projects.png"
+                  alt="Mac project screenshot"
+                  className="portfolio-thumb"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="portfolio-thumb-placeholder" style={{ display: 'none', background: 'linear-gradient(135deg,#667eea,#764ba2)', color: '#fff' }}>Mac</div>
+                <div className="portfolio-info">
+                  <h4>Mac</h4>
+                  <p>Modern web application showcase</p>
+                  <div className="portfolio-buttons">
+                    <a href="https://github.com/yashtambade56-ux/My-Projects" target="_blank" rel="noopener noreferrer" className="btn-repo"><i className="bi bi-github"></i> Repo</a>
+                    <a href="https://myprojects-yash.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-live"><i className="bi bi-arrow-up-right-square"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             {/* Mac */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolios">
               <div className="portfolio-content h-100">
