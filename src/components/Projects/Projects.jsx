@@ -71,17 +71,17 @@ const Projects = () => {
               <div className="portfolio-content h-100">
                 <img
                   src="assets/project-img/projects.png"
-                  alt="Mac project screenshot"
+                  alt="project screenshot"
                   className="portfolio-thumb"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextElementSibling.style.display = 'flex';
                   }}
                 />
-                <div className="portfolio-thumb-placeholder" style={{ display: 'none', background: 'linear-gradient(135deg,#667eea,#764ba2)', color: '#fff' }}>Mac</div>
+                <div className="portfolio-thumb-placeholder" style={{ display: 'none', background: 'linear-gradient(135deg,#667eea,#764ba2)', color: '#fff' }}>My Projects</div>
                 <div className="portfolio-info">
                   <h4>Mac</h4>
-                  <p>Modern web application showcase</p>
+                  <p>Project showcase web</p>
                   <div className="portfolio-buttons">
                     <a href="https://github.com/yashtambade56-ux/My-Projects" target="_blank" rel="noopener noreferrer" className="btn-repo"><i className="bi bi-github"></i> Repo</a>
                     <a href="https://myprojects-yash.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-live"><i className="bi bi-arrow-up-right-square"></i> Live</a>
@@ -493,30 +493,6 @@ const Projects = () => {
                   <div className="portfolio-buttons">
                     <a href="https://github.com/Yashhh710/home-port-v1" target="_blank" rel="noopener noreferrer" className="btn-repo"><i className="bi bi-github"></i> Repo</a>
                     <a href="https://home-port-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-live"><i className="bi bi-arrow-up-right-square"></i> Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* My Website */}
-            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolios">
-              <div className="portfolio-content h-100">
-                <img
-                  src="assets/project-img/1st-web.png"
-                  alt="My Website screenshot"
-                  className="portfolio-thumb"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="portfolio-thumb-placeholder" style={{ display: 'none', background: 'linear-gradient(135deg,#43e97b,#38f9d7)', color: '#333' }}>My Website</div>
-                <div className="portfolio-info">
-                  <h4>My 1st Website</h4>
-                  <p>My first web presence and portfolio</p>
-                  <div className="portfolio-buttons">
-                    <a href="https://github.com/Yashhh710/My-Website" target="_blank" rel="noopener noreferrer" className="btn-repo"><i className="bi bi-github"></i> Repo</a>
-                    <a href="https://yashhh710.github.io/My-Website/index.html" target="_blank" rel="noopener noreferrer" className="btn-live"><i className="bi bi-arrow-up-right-square"></i> Live</a>
                   </div>
                 </div>
               </div>
