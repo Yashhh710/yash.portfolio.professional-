@@ -80,7 +80,7 @@ const Projects = () => {
                 />
                 <div className="portfolio-thumb-placeholder" style={{ display: 'none', background: 'linear-gradient(135deg,#667eea,#764ba2)', color: '#fff' }}>My Projects</div>
                 <div className="portfolio-info">
-                  <h4>Mac</h4>
+                  <h4>My Projects</h4>
                   <p>Project showcase web</p>
                   <div className="portfolio-buttons">
                     <a href="https://github.com/yashtambade56-ux/My-Projects" target="_blank" rel="noopener noreferrer" className="btn-repo"><i className="bi bi-github"></i> Repo</a>
